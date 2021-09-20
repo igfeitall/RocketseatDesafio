@@ -11,13 +11,12 @@ Se trata de uma aplicação para armazenar projetos e suas tarefas.
 - DELETE/*projects/:id* => deleta o projeto com o **id** presente no parâmetro
 - POST/*projects/:id/tasks* => armazena uma nova tarefa no array de tarefas de um projeto com através do **id** recebido
 
+### Middlewares
+
+- Possui um middleware em todas as rotas que possuem um id no parâmetro da URL e verifica se o projeto com esse ID existe.
+- Imprime um (*console.log*) com a contagem de requisições que foram feitas até o momento.
 
 
 ### Exemplo
 
 <img src = "Exemplo.png">
-
-### Middlewares
-
-- Possui um middleware em todas as rotas que possuem um id no parâmetro da URL e verifica se o projeto com esse ID existe.
-- Imprime um (*console.log*) com a contagem de requisições que foram feitas até o momento.

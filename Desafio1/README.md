@@ -15,7 +15,7 @@ Se trata de uma aplicação para armazenar projetos e suas tarefas.
 
 ### Exemplo
 
-S<img src = "Exemplo.png">
+<img src = "Exemplo.png">
 
 ### Middlewares
 

@@ -1,4 +1,3 @@
-import app from "./app";
+import app from './app';
 
-
-app.listen("777")
+app.listen('777');

@@ -10,7 +10,7 @@ class Database {
   }
 
   init() {
-    this.connection = Sequelize(databaseConfig);
+    this.connection = new Sequelize(databaseConfig);
 
     models.map((model) => model.init(this.connection));
   }

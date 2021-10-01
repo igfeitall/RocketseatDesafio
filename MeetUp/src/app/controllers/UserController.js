@@ -14,8 +14,19 @@ class UserController {
       id,
       name,
       email,
-      provider,
     });
+  }
+
+  async update(req, res) {
+    const id = req.userId;
+    let userBd = await User.findOne({ where: { id } });
+    let { email, new_email } = req.body;
+
+    if (!(email === userBd.email)) {
+      return res.status(400).json({ erro: "Email does not found." });
+    }
+
+    return res.json({ user: userBd });
   }
 }
 

@@ -5,7 +5,7 @@ class UserController {
     let userExist = await User.findOne({ where: { email: req.body.email } });
 
     if (userExist) {
-      return res.status(400).json({ erro: "User alredy exists." });
+      return res.status(400).json({ erro: "Email alredy signUp." });
     }
 
     const { id, name, email, provider } = await User.create(req.body);
